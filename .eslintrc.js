@@ -13,6 +13,7 @@ module.exports = {
   },
   plugins: ['react'],
   rules: {
+    'import/no-extraneous-dependencies': ['error', { devDependencies: true }],
     'max-len': 0,
     'no-param-reassign': 0,
     'jsx-a11y/label-has-associated-control': 0,

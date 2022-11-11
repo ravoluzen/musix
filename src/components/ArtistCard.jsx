@@ -1,4 +1,4 @@
-import { useNavigate } from "react-router-dom";
+import { useNavigate } from 'react-router-dom';
 
 const ArtistCard = ({ track }) => {
   const navigate = useNavigate();
@@ -15,7 +15,7 @@ const ArtistCard = ({ track }) => {
       />
       <p className="mt-4 font-semibold text-lg truncate">{track?.subtitle}</p>
     </div>
-  )
+  );
 };
 
 export default ArtistCard;

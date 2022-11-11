@@ -1,4 +1,3 @@
-import { useEffect } from 'react';
 import { useSelector } from 'react-redux';
 import { Route, Routes } from 'react-router-dom';
 
@@ -8,14 +7,10 @@ import { ArtistDetails, TopArtists, AroundYou, Discover, Search, SongDetails, To
 const App = () => {
   const { activeSong } = useSelector((state) => state.player);
 
-  useEffect(() => {
-    window.scrollTo(0, 1);
-  }, []);
-
   return (
     <div className="relative flex">
       <Sidebar />
-      <div className="flex-1 flex flex-col bg-gradient-to-br from-black to-[#121286]">
+      <div className="flex-1 flex flex-col bg-gradient-to-br from-black to-[#7F00FF]">
         <Searchbar />
 
         <div className="px-6 h-[calc(100vh-72px)] overflow-y-scroll hide-scrollbar flex xl:flex-row flex-col-reverse">
